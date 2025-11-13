@@ -1,0 +1,3 @@
+C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/cmake-build-debug/CMakeFiles/lista_della_spesa.dir
+C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
