@@ -5,4 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(lista_della_spesa main.cpp
         Observer.h
-        Subject.h)
+        Subject.h
+        DataDiScadenza.h
+        Oggetto.h
+        Oggetto.cpp)
