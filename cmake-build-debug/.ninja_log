@@ -1,5 +1,7 @@
 # ninja log v5
 3	722	7847455331197437	CMakeFiles/lista_della_spesa.dir/main.cpp.obj	bebd0790eab774b5
-727	893	7847455332861105	lista_della_spesa.exe	36f8c5bc33e5e7c2
-5	475	7847504643473061	CMakeFiles/lista_della_spesa.dir/Oggetto.cpp.obj	d4f978f945877033
 475	589	7847504644587000	lista_della_spesa.exe	1d2454a7bb300f49
+5	475	7847504643473061	CMakeFiles/lista_della_spesa.dir/Oggetto.cpp.obj	d4f978f945877033
+6	426	7847547470984010	CMakeFiles/lista_della_spesa.dir/Oggetto.cpp.obj	d4f978f945877033
+10	816	7847547474856172	CMakeFiles/lista_della_spesa.dir/Lista.cpp.obj	714d31aa5412545d
+816	1288	7847547479585702	lista_della_spesa.exe	9e0316239a112224

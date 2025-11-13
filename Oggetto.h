@@ -15,6 +15,7 @@ private:
     bool acquistato;
 public:
     Oggetto(const std::string& nome, enum Category categoria, int quantita, const Data& data);
+    Oggetto() : nome(""), categoria(Category::Carne), quantita(0), data(Data(1, 1, 2026)), acquistato(false) {};
 
     std::string getNome() const;
     std::string getCategory() const;

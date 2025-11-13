@@ -8,4 +8,6 @@ add_executable(lista_della_spesa main.cpp
         Subject.h
         DataDiScadenza.h
         Oggetto.h
-        Oggetto.cpp)
+        Oggetto.cpp
+        Lista.cpp
+        Lista.h)
