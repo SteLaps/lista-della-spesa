@@ -67,6 +67,12 @@ build CMakeFiles/lista_della_spesa.dir/Lista.cpp.obj: CXX_COMPILER__lista_della_
   OBJECT_DIR = CMakeFiles\lista_della_spesa.dir
   OBJECT_FILE_DIR = CMakeFiles\lista_della_spesa.dir
 
+build CMakeFiles/lista_della_spesa.dir/Utente.cpp.obj: CXX_COMPILER__lista_della_spesa_unscanned_Debug C$:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/Utente.cpp || cmake_object_order_depends_target_lista_della_spesa
+  DEP_FILE = CMakeFiles\lista_della_spesa.dir\Utente.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lista_della_spesa.dir
+  OBJECT_FILE_DIR = CMakeFiles\lista_della_spesa.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lista_della_spesa
@@ -75,7 +81,7 @@ build CMakeFiles/lista_della_spesa.dir/Lista.cpp.obj: CXX_COMPILER__lista_della_
 #############################################
 # Link the executable lista_della_spesa.exe
 
-build lista_della_spesa.exe: CXX_EXECUTABLE_LINKER__lista_della_spesa_Debug CMakeFiles/lista_della_spesa.dir/main.cpp.obj CMakeFiles/lista_della_spesa.dir/Oggetto.cpp.obj CMakeFiles/lista_della_spesa.dir/Lista.cpp.obj
+build lista_della_spesa.exe: CXX_EXECUTABLE_LINKER__lista_della_spesa_Debug CMakeFiles/lista_della_spesa.dir/main.cpp.obj CMakeFiles/lista_della_spesa.dir/Oggetto.cpp.obj CMakeFiles/lista_della_spesa.dir/Lista.cpp.obj CMakeFiles/lista_della_spesa.dir/Utente.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lista_della_spesa.dir

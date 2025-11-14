@@ -10,4 +10,6 @@ add_executable(lista_della_spesa main.cpp
         Oggetto.h
         Oggetto.cpp
         Lista.cpp
-        Lista.h)
+        Lista.h
+        Utente.h
+        Utente.cpp)

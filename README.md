@@ -18,7 +18,13 @@ si definiscono i metodi per aggiungere e rimuovere oggetti,
 aggiornare la quantità che si vuole acquistare per quell'oggetto,
 e metodi per ottenere informazioni sulla lista, ad esempio
 il numero di oggetti che ci sono e quanti devono essere 
-ancora acquistati.
+ancora acquistati; inoltre la Lista lavora come Concrete
+Subject nel pattern Observer.
 2) Inoltre è stata modificata la classe Oggetto.h con l'aggiunta
 di un costruttore di default che risulta necessario nell'uso
 della std::map per aggiungere l'oggetto alla lista.
+- in data 14/11/2025 sono state aggiunte due nuove classi:
+1) Utente.h e Utente.cpp che identificano un utente che può
+creare una lista della spesa e ci può aggiungere e rimuovere 
+oggetti; inoltre l'Utente lavora come Concrete Observer
+nel pattern Observer.
