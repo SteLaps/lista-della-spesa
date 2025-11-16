@@ -1,26 +1,26 @@
 
 #include "Oggetto.h"
 
-Oggetto::Oggetto(const std::string& nome, enum Category categoria, int quantita, const Data& data)
+Oggetto::Oggetto(const std::string& nome, enum Categoria categoria, int quantita, const Data& data)
         : nome(nome), categoria(categoria), quantita(quantita), data(data), acquistato(false) {}
 
 std::string Oggetto::getNome() const {
     return nome;
 }
-std::string Oggetto::getCategory() const {
+std::string Oggetto::getCategoria() const {
     switch (categoria) {
-        case Category::Carne:      return "Carne";
-        case Category::Pesce:      return "Pesce";
-        case Category::Panetteria: return "Panetteria";
-        case Category::Frutta:     return "Frutta";
-        case Category::Verdura:    return "Verdura";
-        case Category::Latticini:  return "Latticini";
-        case Category::Bevande:    return "Bevande";
-        case Category::Dolci:      return "Dolci";
-        case Category::Casa:       return "Casa";
-        case Category::Igene:      return "Igene";
-        case Category::Giardino:   return "Giardino";
-        case Category::Cartoleria: return "Cartoleria";
+        case Categoria::Carne:      return "Carne";
+        case Categoria::Pesce:      return "Pesce";
+        case Categoria::Panetteria: return "Panetteria";
+        case Categoria::Frutta:     return "Frutta";
+        case Categoria::Verdura:    return "Verdura";
+        case Categoria::Latticini:  return "Latticini";
+        case Categoria::Bevande:    return "Bevande";
+        case Categoria::Dolci:      return "Dolci";
+        case Categoria::Casa:       return "Casa";
+        case Categoria::Igene:      return "Igene";
+        case Categoria::Giardino:   return "Giardino";
+        case Categoria::Cartoleria: return "Cartoleria";
     }
 }
 int Oggetto::getQuantita() const {

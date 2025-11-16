@@ -36,7 +36,7 @@ void Lista::listaOgggetti() const {
     std::cout << "Oggetti totali: " << getOggettiTotale() << std::endl;
     std::cout << "Oggetti non comprati: " << getDaAcquistare() << std::endl;
     for (const auto& oggetto : oggetti) {
-        std::cout << "Oggetto: " << oggetto.second.getNome() << ", Categoria: " << oggetto.second.getCategory()
+        std::cout << "Oggetto: " << oggetto.second.getNome() << ", Categoria: " << oggetto.second.getCategoria()
         << ", Quantità: " << oggetto.second.getQuantita() << ", da consumarsi entro il: " << oggetto.second.getData()
         << " " << oggetto.second.getState() << std::endl;
     }

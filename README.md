@@ -38,3 +38,6 @@ Inoltre, è stata modificata la data nella condizione per
 poter considerare validi anche oggetti acquistati e creati
 nel 2025; il file testOggetto.cpp sarà terminato per il
 prossimo commit.
+- in data 16/11/2025 è stata completato il file testOggetto.cpp
+che testa i vari metodi del file Oggetto; ogni test è stato eseguito
+dopo la sua creazione e tutto hanno dato esito positivo.
