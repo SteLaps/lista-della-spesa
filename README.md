@@ -28,3 +28,13 @@ della std::map per aggiungere l'oggetto alla lista.
 creare una lista della spesa e ci può aggiungere e rimuovere 
 oggetti; inoltre l'Utente lavora come Concrete Observer
 nel pattern Observer.
+- in data 16/11/2025 è stato corretto un errore presente nella 
+classe DataDiScadenza.h che non faceva andare in modo corretto 
+lo unit test sulla creazione di un oggetto; il fatto era che
+nella classe non erano state inizializzate le variabili private,
+cosa che ha portato a fornire dei numeri casuali una volta
+lanciato il debug sul test per la creazione di un oggetto.
+Inoltre, è stata modificata la data nella condizione per
+poter considerare validi anche oggetti acquistati e creati
+nel 2025; il file testOggetto.cpp sarà terminato per il
+prossimo commit.
