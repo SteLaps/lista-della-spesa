@@ -17,10 +17,8 @@ std::string Oggetto::getCategoria() const {
         case Categoria::Latticini:  return "Latticini";
         case Categoria::Bevande:    return "Bevande";
         case Categoria::Dolci:      return "Dolci";
-        case Categoria::Casa:       return "Casa";
-        case Categoria::Igene:      return "Igene";
-        case Categoria::Giardino:   return "Giardino";
-        case Categoria::Cartoleria: return "Cartoleria";
+        case Categoria::Alcolici:   return "Alcolici";
+        case Categoria::Pasta:      return "Pasta";
     }
 }
 int Oggetto::getQuantita() const {

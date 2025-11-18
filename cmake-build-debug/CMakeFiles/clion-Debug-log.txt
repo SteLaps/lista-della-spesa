@@ -17,6 +17,6 @@ Call Stack (most recent call first):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) 
--- Configuring done (0.5s)
+-- Configuring done (0.8s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/cmake-build-debug

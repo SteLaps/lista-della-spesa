@@ -4,7 +4,7 @@
 #include <string>
 #include "DataDiScadenza.h"
 
-enum Categoria {Carne, Pesce, Panetteria, Frutta, Verdura, Latticini, Bevande, Dolci, Casa, Igene, Giardino, Cartoleria};
+enum Categoria {Carne, Pesce, Panetteria, Frutta, Verdura, Latticini, Bevande, Dolci, Alcolici, Pasta};
 
 class Oggetto {
 private:

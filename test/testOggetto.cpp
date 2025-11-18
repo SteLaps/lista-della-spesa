@@ -34,19 +34,19 @@ TEST(TestOggetto, AggiornaQuantita) {
 }
 TEST(TestOggetto, AggiornaQuantitaSbagliata) {
     Data data(16, 11, 2025);
-    Oggetto quanderno("quaderno", Categoria::Cartoleria, 2, data);
-    EXPECT_EQ(quanderno.getQuantita(), 2);
-    EXPECT_THROW(quanderno.setQuantita(-2), std::invalid_argument);
+    Oggetto birra("birra", Categoria::Alcolici, 6, data);
+    EXPECT_EQ(birra.getQuantita(), 2);
+    EXPECT_THROW(birra.setQuantita(-2), std::invalid_argument);
 }
 TEST(TestOggetto, getCategoria) {
     Data data(16, 11, 2025);
-    Oggetto sapone("sapone", Categoria::Igene, 1, data);
-    EXPECT_EQ(sapone.getCategoria(), "Igene");
+    Oggetto spaghetti("spaghetti", Categoria::Pasta, 5, data);
+    EXPECT_EQ(spaghetti.getCategoria(), "Pasta");
 }
 TEST(TestOggetto, getData) {
     Data data(6, 5, 2026);
-    Oggetto cartaIgenica("cartaIgenica", Categoria::Casa, 6, data);
-    EXPECT_EQ(cartaIgenica.getData(), "6/5/2026");
+    Oggetto anguria("anguria", Categoria::Frutta, 2, data);
+    EXPECT_EQ(anguria.getData(), "6/5/2026");
 }
 TEST(TestOggetto, PiuOggetti) {
     Data data1(4,12,2025);

@@ -41,3 +41,11 @@ prossimo commit.
 - in data 16/11/2025 è stata completato il file testOggetto.cpp
 che testa i vari metodi del file Oggetto; ogni test è stato eseguito
 dopo la sua creazione e tutto hanno dato esito positivo.
+- in data 18/11/2025 sono state apportete alcune modifiche al codice
+nei file Oggetto.h, Oggetto.cpp e testOggetto.cpp dove alcune categorie
+di oggetti acquistabili sono state cambiate per via del mancante
+senso logico che la data di scadenza avrebbe avuto per questi categorie
+di oggetti. Inoltre, è stata aggiunta un nuovo file, testLista.cpp, che
+fornisce i test per le varie operzioni possibili su una lista; ogni test,
+dopo essere stato implementato, è stato eseguito e ognuno è andato a buon
+fine.
