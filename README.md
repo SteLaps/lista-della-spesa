@@ -49,3 +49,5 @@ di oggetti. Inoltre, è stata aggiunta un nuovo file, testLista.cpp, che
 fornisce i test per le varie operzioni possibili su una lista; ogni test,
 dopo essere stato implementato, è stato eseguito e ognuno è andato a buon
 fine.
+- in data 22/11/2025 sono state corretti alcuni errori presenti nei file
+Utente.h e Utente.cpp e inoltre sono stati aggiunti tre metodi.

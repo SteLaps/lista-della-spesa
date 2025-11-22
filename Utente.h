@@ -14,13 +14,16 @@ private:
     std::map<std::string, std::shared_ptr<Lista>> liste;
 public:
     Utente(const std::string& nome) : nome(nome) {}
-    void creaLista(const std::string nomeLista);
+    void creaLista(const std::string& nomeLista);
     void aggiungiOggetto(const std::string& nomeLista, const Oggetto& oggetto);
     void rimuoviOggetto(const std::string& nomeLista, const std::string& nomeOggetto);
     void mostraLista() const;
     void attachToLista(Utente*self,std::shared_ptr<Lista> lista);
-    void aggiornaQuantita(const std::string& nomeLIsta, const std::string& nomeOggetto, int& quantita);
+    void aggiornaQuantita(const std::string& nomeLista, const std::string& nomeOggetto,const int& quantita);
     void update(const std::string& nomeLista) override;
+    std::string getNome() const;
+    void condividiLista(Utente* utente, const std::string& nomeLista);
+    void setAcquistatoOggetto(const std::string& nomeLista, const std::string& nomeOggetto);
 
     std::shared_ptr<Lista> getLista(const std::string& nomeLista) const;
 };

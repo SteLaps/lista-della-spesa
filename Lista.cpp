@@ -20,7 +20,7 @@ void Lista::rimuoviOggetto(const std::string &nomeOggetto) {
         throw std::invalid_argument("Oggetto non esistente nella lista");
     }
 }
-void Lista::aggiornaQuantita(const std::string &nomeOggetto, int quantita) {
+void Lista::aggiornaQuantitaOggetto(const std::string &nomeOggetto, int quantita) {
     auto it = oggetti.find(nomeOggetto);
     if (it != oggetti.end()) {
         if (it ->second.getQuantita() != quantita) {

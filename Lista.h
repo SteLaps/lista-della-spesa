@@ -18,7 +18,7 @@ public:
 
     void aggiungiOggetto(const Oggetto& oggetto);
     void rimuoviOggetto(const std::string& nomeOggetto);
-    void aggiornaQuantita(const std::string& nomeOggetto, int quantita);
+    void aggiornaQuantitaOggetto(const std::string& nomeOggetto, int quantita);
     void listaOgggetti() const;
     std::string getNomeLista() const;
     int getOggettiTotale() const;

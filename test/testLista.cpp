@@ -20,7 +20,7 @@ TEST(TestLista, AggiornareOggettoNonEsistente) {
     Lista listaDellaSpesa("spesa");
     Oggetto nasello("nasello", Categoria::Pesce, 3, Data(24,1,2026));
     listaDellaSpesa.aggiungiOggetto(nasello);
-    EXPECT_THROW(listaDellaSpesa.aggiornaQuantita("salmone", 5), std::invalid_argument);
+    EXPECT_THROW(listaDellaSpesa.aggiornaQuantitaOggetto("salmone", 5), std::invalid_argument);
 }
 TEST(TestLista, SetAcquistatoOggettoNonEsistente) {
     Lista listaDellaSpesa("spesa");
