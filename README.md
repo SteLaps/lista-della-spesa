@@ -51,3 +51,6 @@ dopo essere stato implementato, è stato eseguito e ognuno è andato a buon
 fine.
 - in data 22/11/2025 sono state corretti alcuni errori presenti nei file
 Utente.h e Utente.cpp e inoltre sono stati aggiunti tre metodi.
+- in data 23/11/2025 sono state fatte alcune correzioni al file Lista.cpp
+e il metodo notify è stato portato all'inizio del file. Inoltre è stato inserito
+il file testUtente.cpp.

@@ -1,7 +1,13 @@
 
 #include <iostream>
 #include "Lista.h"
+#include "Utente.h"
 
+void Lista::notify() {
+    for(const auto& itr : observers) {
+        itr->update(getNomeLista());
+    }
+}
 void Lista::aggiungiOggetto(const Oggetto &oggetto) {
     if(oggetti.find(oggetto.getNome()) == oggetti.end()) {
         oggetti[oggetto.getNome()] = oggetto;
@@ -72,13 +78,8 @@ void Lista::setAcquistati(const std::string &nomeOggetto) {
     }
 }
 void Lista::attach(Observer *o) {
-    observers.push_back(0);
+    observers.push_back(o);
 }
 void Lista::detach(Observer *o) {
-    observers.remove(0);
-}
-void Lista::notify() {
-    for(const auto& it : observers) {
-        it->update(getNomeLista());
-    }
+    observers.remove(o);
 }

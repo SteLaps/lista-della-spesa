@@ -209,6 +209,20 @@ build test/CMakeFiles/runTests.dir/testLista.cpp.obj: CXX_COMPILER__runTests_uns
   OBJECT_DIR = test\CMakeFiles\runTests.dir
   OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
 
+build test/CMakeFiles/runTests.dir/testUtente.cpp.obj: CXX_COMPILER__runTests_unscanned_Debug C$:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/test/testUtente.cpp || cmake_object_order_depends_target_runTests
+  DEP_FILE = test\CMakeFiles\runTests.dir\testUtente.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/test/lib/googletest -isystem C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/test/lib/googletest/include
+  OBJECT_DIR = test\CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+
+build test/CMakeFiles/runTests.dir/runAllTest.cpp.obj: CXX_COMPILER__runTests_unscanned_Debug C$:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/test/runAllTest.cpp || cmake_object_order_depends_target_runTests
+  DEP_FILE = test\CMakeFiles\runTests.dir\runAllTest.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/test/lib/googletest -isystem C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/test/lib/googletest/include
+  OBJECT_DIR = test\CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runTests
@@ -217,7 +231,7 @@ build test/CMakeFiles/runTests.dir/testLista.cpp.obj: CXX_COMPILER__runTests_uns
 #############################################
 # Link the executable test\runTests.exe
 
-build test/runTests.exe: CXX_EXECUTABLE_LINKER__runTests_Debug test/CMakeFiles/runTests.dir/testOggetto.cpp.obj test/CMakeFiles/runTests.dir/testLista.cpp.obj | test/lib/googletest/libgtestd.a test/lib/googletest/libgtest_maind.a libcore.a test/lib/googletest/libgtestd.a || libcore.a test/lib/googletest/libgtest_maind.a test/lib/googletest/libgtestd.a
+build test/runTests.exe: CXX_EXECUTABLE_LINKER__runTests_Debug test/CMakeFiles/runTests.dir/testOggetto.cpp.obj test/CMakeFiles/runTests.dir/testLista.cpp.obj test/CMakeFiles/runTests.dir/testUtente.cpp.obj test/CMakeFiles/runTests.dir/runAllTest.cpp.obj | test/lib/googletest/libgtestd.a test/lib/googletest/libgtest_maind.a libcore.a test/lib/googletest/libgtestd.a || libcore.a test/lib/googletest/libgtest_maind.a test/lib/googletest/libgtestd.a
   FLAGS = -g
   LINK_LIBRARIES = test/lib/googletest/libgtestd.a  test/lib/googletest/libgtest_maind.a  libcore.a  test/lib/googletest/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = test\CMakeFiles\runTests.dir
