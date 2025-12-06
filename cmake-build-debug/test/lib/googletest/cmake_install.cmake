@@ -37,22 +37,3 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/objdump.exe")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/cmake-build-debug/test/lib/googletest/libgtestd.a")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/cmake-build-debug/test/lib/googletest/libgtest_maind.a")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/test/lib/googletest/include/gtest")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES
-    "C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/cmake-build-debug/gtest.pc"
-    "C:/Users/Stefano/OneDrive/Documenti/GitHub/lista-della-spesa/cmake-build-debug/gtest_main.pc"
-    )
-endif()
-

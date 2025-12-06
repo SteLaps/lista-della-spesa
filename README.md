@@ -54,3 +54,5 @@ Utente.h e Utente.cpp e inoltre sono stati aggiunti tre metodi.
 - in data 23/11/2025 sono state fatte alcune correzioni al file Lista.cpp
 e il metodo notify è stato portato all'inizio del file. Inoltre è stato inserito
 il file testUtente.cpp.
+- in data 06/12/2025 è stato aggiunto il file runAllTest.cpp che esegue tutti 
+i test.

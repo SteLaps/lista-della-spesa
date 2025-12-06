@@ -35,7 +35,7 @@ TEST(TestOggetto, AggiornaQuantita) {
 TEST(TestOggetto, AggiornaQuantitaSbagliata) {
     Data data(16, 11, 2025);
     Oggetto birra("birra", Categoria::Alcolici, 6, data);
-    EXPECT_EQ(birra.getQuantita(), 2);
+    EXPECT_EQ(birra.getQuantita(), 6);
     EXPECT_THROW(birra.setQuantita(-2), std::invalid_argument);
 }
 TEST(TestOggetto, getCategoria) {
