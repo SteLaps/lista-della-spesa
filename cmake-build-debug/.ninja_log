@@ -14,3 +14,10 @@
 13739	16284	7867347730178657	test/runTests.exe	df18551e5b5385e
 15	1866	7867348441569161	test/CMakeFiles/runTests.dir/testOggetto.cpp.obj	4ffcf144b5d0dfab
 1866	4341	7867348466244071	test/runTests.exe	df18551e5b5385e
+110	1129	7887236613708379	CMakeFiles/core.dir/Utente.cpp.obj	f2c7050c06b8c2c8
+102	1138	7887236613808381	CMakeFiles/core.dir/Lista.cpp.obj	d98215712f534dce
+1138	1299	7887236615419245	libcore.a	92d12c462edfb7e4
+116	1643	7887236618844246	test/CMakeFiles/runTests.dir/testUtente.cpp.obj	696376faa59eaada
+1643	3300	7887236635370648	test/runTests.exe	df18551e5b5385e
+32	408	7887236810936342	CMakeFiles/lista_della_spesa.dir/main.cpp.obj	bebd0790eab774b5
+409	495	7887236811761606	lista_della_spesa.exe	c173ee04c7ba9583

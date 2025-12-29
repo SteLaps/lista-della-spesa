@@ -56,3 +56,6 @@ e il metodo notify è stato portato all'inizio del file. Inoltre è stato inseri
 il file testUtente.cpp.
 - in data 06/12/2025 è stato aggiunto il file runAllTest.cpp che esegue tutti 
 i test.
+- in data 29/12/2025 è stato modoficato il file Utente per eliminare il 
+costrutto self del linguaggio Python che non era appropriato per il progetto
+in linguaggio C++, inizialmente inserito per presunta comodità nel programma.

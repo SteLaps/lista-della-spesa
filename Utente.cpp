@@ -33,11 +33,11 @@ void Utente::mostraLista() const {
         it.second->listaOgggetti();
     }
 }
-void Utente::attachToLista(Utente *self, std::shared_ptr<Lista> lista) {
+void Utente::attachToLista(std::shared_ptr<Lista> lista) {
     auto nomeLista = lista->getNomeLista();
     if (liste.find(nomeLista) == liste.end()) {
         liste[nomeLista] = lista;
-        lista->attach(self);
+        lista->attach(this);
     } else {
         throw std::invalid_argument("Lista già esistente");
     }
@@ -56,7 +56,7 @@ std::string Utente::getNome() const {
 }
 void Utente::condividiLista(Utente *utente, const std::string &nomeLista) {
     auto lista = getLista(nomeLista);
-    utente->attachToLista(utente, lista);
+    utente->attachToLista(lista);
     std::cout << "Lista: " << lista->getNomeLista() << " , condivisa con " << utente->getNome() << std::endl;
 }
 void Utente::setAcquistatoOggetto(const std::string &nomeLista, const std::string &nomeOggetto) {

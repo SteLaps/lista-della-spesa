@@ -18,7 +18,7 @@ public:
     void aggiungiOggetto(const std::string& nomeLista, const Oggetto& oggetto);
     void rimuoviOggetto(const std::string& nomeLista, const std::string& nomeOggetto);
     void mostraLista() const;
-    void attachToLista(Utente*self,std::shared_ptr<Lista> lista);
+    void attachToLista(std::shared_ptr<Lista> lista);
     void aggiornaQuantita(const std::string& nomeLista, const std::string& nomeOggetto,const int& quantita);
     void update(const std::string& nomeLista) override;
     std::string getNome() const;
