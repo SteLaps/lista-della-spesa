@@ -27,7 +27,7 @@ void Utente::rimuoviOggetto(const std::string& nomeLista, const std::string& nom
     }
 }
 void Utente::mostraLista() const {
-    std::cout << "Utente: " << nome << "gestisce le liste: " << std::endl;
+    std::cout << "Utente: " << nome << " gestisce le liste: " << std::endl;
     for (const auto& it : liste) {
         std::cout << "- " << it.first << std::endl;
         it.second->listaOgggetti();
