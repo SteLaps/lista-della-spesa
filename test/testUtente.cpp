@@ -72,7 +72,7 @@ TEST(testUtente, AggiungiOggetto) {
     Oggetto oggetto("Farfalle", Categoria::Pasta, 1, Data(16,3,2026));
     utente.aggiungiOggetto("Spesa", oggetto);
     auto lista = utente.getLista("Spesa");
-    ASSERT_NE(lista, nullptr);
+    ASSERT_NE(lista, nullptr);   //usato ASSERT perchè se la lista fosse nullptr, usando dopo lista->getOggettiTotale su nullptr avrei un crush di tutto il test, difendo quindi tutto il test
     EXPECT_EQ(lista->getOggettiTotale(), 1);
 }
 TEST(testUtente, RimuoviOggetto) {
