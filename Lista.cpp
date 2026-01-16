@@ -14,7 +14,7 @@ void Lista::aggiungiOggetto(const Oggetto &oggetto) {
         notify();
     }
     else {
-        throw std::invalid_argument("Oggetto non esistente nella lista");
+        throw std::invalid_argument("Oggetto già esistente nella lista");
     }
 }
 void Lista::rimuoviOggetto(const std::string &nomeOggetto) {
@@ -29,7 +29,7 @@ void Lista::rimuoviOggetto(const std::string &nomeOggetto) {
 void Lista::aggiornaQuantitaOggetto(const std::string &nomeOggetto, int quantita) {
     auto it = oggetti.find(nomeOggetto);
     if (it != oggetti.end()) {
-        if (it ->second.getQuantita() != quantita) {
+        if (it->second.getQuantita() != quantita) {
             it->second.setQuantita(quantita);
             notify();
         }
@@ -64,7 +64,7 @@ int Lista::getDaAcquistare() const {
             count++;
         }
     }
-        return count;
+    return count;
 }
 void Lista::setAcquistati(const std::string &nomeOggetto) {
     auto it = oggetti.find(nomeOggetto);
