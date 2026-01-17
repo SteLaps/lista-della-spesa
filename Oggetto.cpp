@@ -1,7 +1,7 @@
 
 #include "Oggetto.h"
 
-Oggetto::Oggetto(const std::string& nome, enum Categoria categoria, int quantita, const Data& data)
+Oggetto::Oggetto(const std::string& nome, Categoria categoria, int quantita, const Data& data)
         : nome(nome), categoria(categoria), quantita(quantita), data(data), acquistato(false) {}
 
 std::string Oggetto::getNome() const {
