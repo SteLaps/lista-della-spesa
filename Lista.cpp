@@ -1,7 +1,6 @@
 
 #include <iostream>
 #include "Lista.h"
-#include "Utente.h"
 
 void Lista::notify() {
     for(const auto& itr : observers) {
@@ -43,7 +42,7 @@ void Lista::listaOgggetti() const {
     std::cout << "Oggetti non comprati: " << getDaAcquistare() << std::endl;
     for (const auto& oggetto : oggetti) {
         std::cout << "Oggetto: " << oggetto.second.getNome() << ", Categoria: " << oggetto.second.getCategoria()
-        << ", Quantità: " << oggetto.second.getQuantita() << ", da consumarsi entro il: " << oggetto.second.getData()
+        << ", Quantità: " << oggetto.second.getQuantita() << ", da consumarsi entro il: " << oggetto.second.getDataDiScadenza()
         << " " << oggetto.second.getState() << std::endl;
     }
 }

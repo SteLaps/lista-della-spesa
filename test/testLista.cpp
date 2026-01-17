@@ -4,7 +4,7 @@
 
 TEST(TestLista, RimuovereOggettoNonEsistente) {
     Lista listaDellaSpesa("spesa");
-    Oggetto sgombro("sgombro", Categoria::Pesce, 3, Data(30, 12, 2025));
+    Oggetto sgombro("sgombro", Categoria::Pesce, 3, Data(30, 1, 2026));
     listaDellaSpesa.aggiungiOggetto(sgombro);
     EXPECT_EQ(listaDellaSpesa.getOggettiTotale(), 1);
     EXPECT_THROW(listaDellaSpesa.rimuoviOggetto("salmone"), std::invalid_argument);
@@ -30,9 +30,9 @@ TEST(TestLista, SetAcquistatoOggettoNonEsistente) {
 }
 TEST(TestLista, getDaAcquistareESetAcquistati) {
     Lista listaDellaSpesa("spesa");
-    Oggetto manzo("manzo", Categoria::Carne, 4, Data(12,12,2025));
+    Oggetto manzo("manzo", Categoria::Carne, 4, Data(12,3,2026));
     listaDellaSpesa.aggiungiOggetto(manzo);
-    Oggetto branzino("branziono", Categoria::Pesce, 3, Data(5,12,2025));
+    Oggetto branzino("branziono", Categoria::Pesce, 3, Data(5,6,2026));
     listaDellaSpesa.aggiungiOggetto(branzino);
     Oggetto vodka("vodka", Categoria::Alcolici, 1, Data(19,4,2026));
     listaDellaSpesa.aggiungiOggetto(vodka);
@@ -42,6 +42,7 @@ TEST(TestLista, getDaAcquistareESetAcquistati) {
     listaDellaSpesa.setAcquistati("branziono");
     EXPECT_EQ(listaDellaSpesa.getDaAcquistare(),1);
     listaDellaSpesa.rimuoviOggetto("vodka");
+    EXPECT_EQ(listaDellaSpesa.getDaAcquistare(),0);
 }
 TEST(TestLista, CostruttoreEGetNomeLista) {
     Lista listaDellaSpesa("spesa");
@@ -49,7 +50,7 @@ TEST(TestLista, CostruttoreEGetNomeLista) {
 }
 TEST(TestLista, AggiungiOggetto) {
     Lista listaDellaSpesa("spesa");
-    Oggetto mandarino("mandarino", Categoria::Frutta, 16, Data(16,12,2025));
+    Oggetto mandarino("mandarino", Categoria::Frutta, 16, Data(16,5,2026));
     EXPECT_EQ(listaDellaSpesa.getOggettiTotale(), 0);
     listaDellaSpesa.aggiungiOggetto(mandarino);
     EXPECT_EQ(listaDellaSpesa.getOggettiTotale(), 1);

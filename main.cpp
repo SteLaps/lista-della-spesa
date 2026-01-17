@@ -17,20 +17,20 @@ int main() {
         stefano.condividiLista(&lorenzo, "Spesa Settimanale");
 
         // Creazione oggetti
-        Oggetto latte("Latte", Categoria::Latticini, 2, Data(10, 2, 2025));
-        Oggetto pane("Pane", Categoria::Panetteria, 4, Data(5, 2, 2025));
-        Oggetto pasta("Pasta", Categoria::Pasta, 3, Data(30, 6, 2025));
-        Oggetto mele("Mele", Categoria::Frutta, 6, Data(15, 2, 2025));
-        Oggetto arista("Arista", Categoria::Carne, 3, Data(18, 1, 2025));
-        Oggetto focaccia("Focaccia", Categoria::Panetteria, 1, Data(25, 4, 2025));
+        Oggetto latte("Latte", Categoria::Latticini, 2, Data(10, 2, 2026));
+        Oggetto pane("Pane", Categoria::Panetteria, 4, Data(5, 2, 2026));
+        Oggetto pasta("Pasta", Categoria::Pasta, 3, Data(30, 6, 2026));
+        Oggetto mele("Mele", Categoria::Frutta, 6, Data(15, 2, 2026));
+        Oggetto arista("Arista", Categoria::Carne, 3, Data(18, 1, 2026));
+        Oggetto focaccia("Focaccia", Categoria::Panetteria, 1, Data(25, 4, 2026));
 
         // Aggiunta oggetti alla lista
-        stefano.aggiungiOggetto("Spesa Settimanale", latte);
-        stefano.aggiungiOggetto("Spesa Settimanale", pane);
-        stefano.aggiungiOggetto("Spesa Settimanale", pasta);
-        stefano.aggiungiOggetto("Spesa Settimanale", mele);
-        stefano.aggiungiOggetto("Spesa Settimanale", arista);
-        stefano.aggiungiOggetto("Spesa Settimanale", focaccia);
+        stefano.aggiungiOggettoAllaLista("Spesa Settimanale", latte);
+        stefano.aggiungiOggettoAllaLista("Spesa Settimanale", pane);
+        stefano.aggiungiOggettoAllaLista("Spesa Settimanale", pasta);
+        stefano.aggiungiOggettoAllaLista("Spesa Settimanale", mele);
+        stefano.aggiungiOggettoAllaLista("Spesa Settimanale", arista);
+        stefano.aggiungiOggettoAllaLista("Spesa Settimanale", focaccia);
 
         // Mostra stato lista
         std::cout << "--- Liste  ---" << std::endl;
@@ -51,7 +51,7 @@ int main() {
 
         // Modifica la lista condivisa
         std::cout << "---  modifica lista condivisa  ---" << std::endl;
-        lorenzo.rimuoviOggetto("Spesa Settimanale", "Mele");
+        lorenzo.rimuoviOggettoDallaLista("Spesa Settimanale", "Mele");
         lorenzo.mostraLista();
         stefano.mostraLista();
 

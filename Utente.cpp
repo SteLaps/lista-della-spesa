@@ -12,14 +12,14 @@ void Utente::creaLista(const std::string& nomeLista) {
         lista->attach(this);
     }
 }
-void Utente::aggiungiOggetto(const std::string& nomeLista, const Oggetto& oggetto) {
+void Utente::aggiungiOggettoAllaLista(const std::string &nomeLista, const Oggetto &oggetto) {
     if (liste.find(nomeLista) != liste.end()) {
         liste[nomeLista]->aggiungiOggetto(oggetto);
     } else {
         throw std::invalid_argument("Lista non trovata");
     }
 }
-void Utente::rimuoviOggetto(const std::string& nomeLista, const std::string& nomeOggetto) {
+void Utente::rimuoviOggettoDallaLista(const std::string& nomeLista, const std::string& nomeOggetto) {
     if (liste.find(nomeLista) != liste.end()) {
         liste[nomeLista]->rimuoviOggetto(nomeOggetto);
     } else {
@@ -42,7 +42,7 @@ void Utente::attachToLista(std::shared_ptr<Lista> lista) {
         throw std::invalid_argument("Lista già esistente");
     }
 }
-void Utente::aggiornaQuantita(const std::string& nomeLista, const std::string& nomeOggetto,const int& quantita) {
+void Utente::aggiornaQuantita(const std::string& nomeLista, const std::string& nomeOggetto, int quantita) {
     auto lista = getLista(nomeLista);
     lista->aggiornaQuantitaOggetto(nomeOggetto, quantita);
 }

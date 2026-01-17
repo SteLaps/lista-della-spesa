@@ -21,7 +21,7 @@ public:
     std::string getCategoria() const;
     int getQuantita() const;
     void setQuantita(int quantita);
-    std::string getData() const;
+    std::string getDataDiScadenza() const;
     bool isAcquistato() const;
     std::string getState() const;
     void setAquistato();

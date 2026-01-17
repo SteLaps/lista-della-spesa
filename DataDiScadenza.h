@@ -9,8 +9,8 @@ private:
     std::vector<int> days = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //numero di giorni in ciascun mese
 public:
     Data(int g, int m, int a) {
-        if(a > 2024) {
-            if(m > 12 or m < 0) {
+        if(a > 2025) {
+            if(m > 12 or m < 1) {
                 throw std::invalid_argument("Mese non valido");
             }
             if(g < 0 or g > days[m-1]) { //se il giorno è maggiore del numero di giorni validi in quel mese

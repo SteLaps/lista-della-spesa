@@ -31,7 +31,7 @@ void Oggetto::setQuantita(int quantita) {
         throw std::invalid_argument("Quantità selezionata negativa");
     }
 }
-std::string Oggetto::getData() const {
+std::string Oggetto::getDataDiScadenza() const {
     return data.getData();
 }
 bool Oggetto::isAcquistato() const {

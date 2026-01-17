@@ -3,7 +3,6 @@
 
 #include <list>
 #include <map>
-#include <memory>
 #include "Oggetto.h"
 #include "Subject.h"
 #include "Observer.h"

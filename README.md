@@ -61,3 +61,6 @@ costrutto self del linguaggio Python che non era appropriato per il progetto
 in linguaggio C++, inizialmente inserito per presunta comodità nel programma.
 - in data 30/12/2025 è stato aggiunto un main per simulare l'utilizzo del
 programma.
+- in data 17/01/2026 sono state apportate alcune modifiche per rendere il 
+codice del programma più leggibile e alcune correzioni alle date per 
+renderle più conformi al momento della consegna del progetto.
